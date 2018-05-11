@@ -2,15 +2,15 @@
 library(shiny)
 
 # Get a vector of column names (from `mpg`) to use as select inputs
-select_values <- colnames(mpg)
+select_values <- colnames(mtcars)
 
-# Create a shinyUI with a `fluidPage` layout
-
+# Create a shinyUI with a `fluidPage` layoout
+fluidPage(
   # A page header
-
+  title = "Miles per Gallon", 
   
   # Add a select input for the x variable
-
+  selectInput("xvar", label = )
   
   # Add a select input for the y variable
 
@@ -23,3 +23,4 @@ select_values <- colnames(mpg)
 
 
   # Plot the output with the name "scatter"
+)
